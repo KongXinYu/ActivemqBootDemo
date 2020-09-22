@@ -1,0 +1,13 @@
+server:
+  port: 7777
+
+spring:
+  activemq:
+    broker-url: nio://192.168.1.203:5671
+    user: admin
+    password: admin
+  jms:
+    pub-sub-domain: false # false = queue   true = topic
+
+#自定义队列名称
+myqueue: boot-activemq-queue
